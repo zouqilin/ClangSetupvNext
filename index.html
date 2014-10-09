@@ -59,6 +59,89 @@ If is: </p>
 </code></pre>
 
 <p>You have trouble, you can click on <strong><em>PowerShell.Setting.bat</em></strong>, this batch script feature is to modify the PowerShell execution policy is written to the registry, the implementation process will automatically right, you need to select OK</p>
+
+<h2>
+<a name="clangonwin" class="anchor" href="#clangonwin"><span class="octicon octicon-link"></span></a>ClangOnWin</h2>
+
+<p>Build Clang,Base Visual Studio</p>
+
+<blockquote>
+<p>Visual Studio 2013 or Later,It's Best for VisualStudio 2013 Update 3<br>
+cl.exe 18.00.30723</p>
+</blockquote>
+
+<p>Or Your can use Mingw-w64,your can cross compile LLVM on Linux ,Mingw-w64 Support it.</p>
+
+<p>The Other,Your can use cmake to create MinGW Makefile,or NMake Makefile ,run it ,The C and C++ Compiler is Mingw-w64 tools ( i686-w64-mingw32-gcc ,x86_64-w64-mingw32-xxx)</p>
+
+<h2>
+<a name="autobuilder" class="anchor" href="#autobuilder"><span class="octicon octicon-link"></span></a>AutoBuilder</h2>
+
+<p>Run<br><code>PowerShell -File .\ClangBuilderPSvNext.ps1</code><br>
+If not Param ,default VisualStudio version is x86.<br></p>
+
+<p><code>PowerShell -File .\ClangBuilederPSNext.ps1 VS120 X86 Release MT MKI -C</code></p>
+
+<p>VisualStudio version:</p>
+
+<blockquote>
+<p>VS110 VS120 VS140</p>
+</blockquote>
+
+<p>Platform:</p>
+
+<blockquote>
+<p>X86 X64 ARM(not support now)</p>
+</blockquote>
+
+<p>Build Type:</p>
+
+<blockquote>
+<p>Release MinSizeRel RelWithDbgInfo Debug</p>
+</blockquote>
+
+<p>C/C++ Runtime Library:</p>
+
+<blockquote>
+<p>MT(d) MD(d)</p>
+</blockquote>
+
+<p>Make Install Package:</p>
+
+<blockquote>
+<p>MKI NOMKI</p>
+</blockquote>
+
+<p>Using Clean Environment (PATH)</p>
+
+<blockquote>
+<p>-C</p>
+</blockquote>
+
+<h2>
+<a name="user-interfaceui" class="anchor" href="#user-interfaceui"><span class="octicon octicon-link"></span></a>User Interface(UI)</h2>
+
+<h4>
+<a name="start-screen" class="anchor" href="#start-screen"><span class="octicon octicon-link"></span></a>Start Screen</h4>
+
+<p>Function:<code>Show-LauncherWindow</code> Base WPF.<br>
+Start Screen:
+<img src="Images/StartWindow.jpg" alt="Image"></p>
+
+<p>Function:<code>Get-ReadMeWindow</code> Base WPF.<br>
+ReadMeBox:
+<img src="Images/ReadMeWindow.jpg" alt="Image"></p>
+
+<p>Other:<br>
+OpenFileDialog(Vista Style),Popu Menu Select,PowerShell base Select Menu 
+<code>Show-OpenFileDialog ,New-Popup Select-MenuShow</code></p>
+
+<h4>
+<a name="voice" class="anchor" href="#voice"><span class="octicon octicon-link"></span></a>Voice</h4>
+
+<pre lang="Out-ClangSetupTipsVoice```"><code>
+Copyright &amp;copy; 2014 ForceStudio.All Rights Reserved.
+</code></pre>
       </section>
     </div>
 

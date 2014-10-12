@@ -39,6 +39,12 @@
 <h2>
 <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation:</h2>
 
+<h5>
+<a name="usually" class="anchor" href="#usually"><span class="octicon octicon-link"></span></a>Usually:</h5>
+
+<p>Download from Github,Or
+<code>git clone https://github.com/forcegroup/ClangSetupvNext.git ClangSetupvNext</code></p>
+
 <p>Click the <em>Install.bat</em> in the ClangSetupvNext directory, this will run PowerShell startup</p>
 
 <p><strong>InstallClangSetupvNext.ps1</strong>, It is recommended that whenever you have PowerShell scripts, and try not to delete the project file in the tools directory.</p>
@@ -59,6 +65,21 @@ If is: </p>
 </code></pre>
 
 <p>You have trouble, you can click on <strong><em>PowerShell.Setting.bat</em></strong>, this batch script feature is to modify the PowerShell execution policy is written to the registry, the implementation process will automatically right, you need to select OK</p>
+
+<h5>
+<a name="webinstaller" class="anchor" href="#webinstaller"><span class="octicon octicon-link"></span></a>WebInstaller:</h5>
+
+<blockquote>
+<p><code>PS:\&gt; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/forcegroup/ClangSetupvNext/master/WebInstaller/install.ps1'))</code></p>
+</blockquote>
+
+<p>Or:</p>
+
+<blockquote>
+<p><code>C:\&gt;  @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/forcegroup/ClangSetupvNext/master/WebInstaller/install.ps1'))"</code></p>
+</blockquote>
+
+<p><strong>Your Should Input Your ClangSetup Install Loaction!!!!</strong></p>
 
 <h2>
 <a name="clangonwin" class="anchor" href="#clangonwin"><span class="octicon octicon-link"></span></a>ClangOnWin</h2>

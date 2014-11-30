@@ -1,59 +1,55 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="ClangSetupvNext : ClangOnWin Build Environment">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-    <title>ClangSetupvNext</title>
+    <title>ClangSetupvNext by forcezeus</title>
   </head>
 
   <body>
+    <header>
+      <div class="inner">
+        <h1>ClangSetupvNext</h1>
+        <h2>ClangOnWin Build Environment</h2>
+        <a href="https://github.com/forcezeus/ClangSetupvNext" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/forcezeus/ClangSetupvNext">View on GitHub</a>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="clangsetup-vnext" class="anchor" href="#clangsetup-vnext" aria-hidden="true"><span class="octicon octicon-link"></span></a>ClangSetup vNext</h1>
 
-          <h1 id="project_title">ClangSetupvNext</h1>
-          <h2 id="project_tagline">ClangOnWin Build Environment</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/forcezeus/ClangSetupvNext/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/forcezeus/ClangSetupvNext/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="clangsetup-vnext" class="anchor" href="#clangsetup-vnext"><span class="octicon octicon-link"></span></a>ClangSetup vNext</h1>
-
-<p>ClangOnWin Build Environment vNext, Long Term Evolution <br></p>
+<p>ClangOnWin Build Environment vNext, Long Term Evolution   </p>
 
 <h2>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation:</h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation:</h2>
 
-<h5>
-<a name="usually" class="anchor" href="#usually"><span class="octicon octicon-link"></span></a>Usually:</h5>
+<h4>
+<a id="usually" class="anchor" href="#usually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usually:</h4>
 
 <p>Download from Github, If your known use Git<br>
 <code>git clone https://github.com/forcezeus/ClangSetupvNext.git ClangSetupvNext</code></p>
 
-<p>Click the <em>Install.bat</em> in the ClangSetupvNext directory, this will run PowerShell startup</p>
-
-<p><strong>InstallClangSetupvNext.ps1</strong>, It is recommended that whenever you have PowerShell scripts, and try not to delete the project file in the tools directory.</p>
+<p>Click the <em>Install.bat</em> in the ClangSetupvNext directory, this will run PowerShell startup ** <em>InstallClangSetupvNext.ps1</em> **<br>
+It is recommended that whenever you have PowerShell scripts, and try not to delete the project file in the tools directory.</p>
 
 <p>Similarly, you can start a PowerShell runs InstallClangSetupvNext.ps1, generally run PowerShell scripts on the Windows right-click menu option, you can right-click the menu "<em>run with PowerShell</em>"
 Above procedure does not require administrator privileges.</p>
 
 <p>If you are unable to run the script, please enter <strong>Get-ExecutionPolicy</strong> in the PowerShell,
-If is: </p>
+If is:  </p>
 
 <blockquote>
 <p>Restricted </p>
@@ -61,28 +57,22 @@ If is: </p>
 
 <p>Please run PowerShell with administrator rights, and Type: </p>
 
-<pre><code>Set-ExecutionPolicy RemoteSigned
-</code></pre>
+<p><code>Set-ExecutionPolicy RemoteSigned</code></p>
 
 <p>You have trouble, you can click on <strong><em>PowerShell.Setting.bat</em></strong>, this batch script feature is to modify the PowerShell execution policy is written to the registry, the implementation process will automatically right, you need to select OK</p>
 
-<h5>
-<a name="webinstaller" class="anchor" href="#webinstaller"><span class="octicon octicon-link"></span></a>WebInstaller:</h5>
+<h4>
+<a id="webinstaller" class="anchor" href="#webinstaller" aria-hidden="true"><span class="octicon octicon-link"></span></a>WebInstaller:</h4>
 
-<blockquote>
-<p><code>PS:\&gt; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/forcezeus/ClangSetupvNext/master/WebInstaller/install.ps1'))</code></p>
-</blockquote>
+<p><code>PS:\&gt;iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/forcezeus/ClangSetupvNext/master/WebInstaller/install.ps1'))</code>   </p>
 
-<p>Or:</p>
-
-<blockquote>
-<p><code>C:\&gt;  @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/forcezeus/ClangSetupvNext/master/WebInstaller/install.ps1'))"</code></p>
-</blockquote>
+<p>Or:
+<code>C:\&gt;  @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/forcezeus/ClangSetupvNext/master/WebInstaller/install.ps1'))"</code></p>
 
 <p><strong>Your Should Input Your ClangSetup Install Loaction!!!!</strong></p>
 
 <h2>
-<a name="clangonwin" class="anchor" href="#clangonwin"><span class="octicon octicon-link"></span></a>ClangOnWin</h2>
+<a id="clangonwin" class="anchor" href="#clangonwin" aria-hidden="true"><span class="octicon octicon-link"></span></a>ClangOnWin</h2>
 
 <p>Build Clang,Base Visual Studio</p>
 
@@ -96,13 +86,12 @@ cl.exe 18.00.30723</p>
 <p>The Other,Your can use cmake to create MinGW Makefile,or NMake Makefile ,run it ,The C and C++ Compiler is Mingw-w64 tools ( i686-w64-mingw32-gcc ,x86_64-w64-mingw32-xxx)</p>
 
 <h2>
-<a name="autobuilder" class="anchor" href="#autobuilder"><span class="octicon octicon-link"></span></a>AutoBuilder</h2>
+<a id="automated-build" class="anchor" href="#automated-build" aria-hidden="true"><span class="octicon octicon-link"></span></a>Automated build</h2>
 
 <p>Run<br>
 <code>PowerShell -File .\ClangBuilderPSvNext.ps1</code><br>
-If not Param ,default VisualStudio version is x86.<br></p>
-
-<p><code>PowerShell -File .\ClangBuilederPSNext.ps1 VS120 X86 Release MT MKI -C</code></p>
+If not Param ,default VisualStudio version is 2013(VS120) Target:x86 Type:Release.<br>
+<code>PowerShell -File .\ClangBuilederPSNext.ps1 VS120 X86 Release MT MKI -C</code></p>
 
 <p>VisualStudio version:</p>
 
@@ -141,10 +130,10 @@ If not Param ,default VisualStudio version is x86.<br></p>
 </blockquote>
 
 <h2>
-<a name="user-interfaceui" class="anchor" href="#user-interfaceui"><span class="octicon octicon-link"></span></a>User Interface(UI)</h2>
+<a id="user-interfaceui" class="anchor" href="#user-interfaceui" aria-hidden="true"><span class="octicon octicon-link"></span></a>User Interface(UI)</h2>
 
 <h4>
-<a name="start-screen" class="anchor" href="#start-screen"><span class="octicon octicon-link"></span></a>Start Screen</h4>
+<a id="start-screen" class="anchor" href="#start-screen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Start Screen</h4>
 
 <p>Function:<code>Show-LauncherWindow</code> Base WPF.<br>
 Start Screen:
@@ -162,23 +151,30 @@ OpenFileDialog(Vista Style),Popu Menu Select,PowerShell base Select Menu <br>
 <code>Show-OpenFileDialog ,New-Popup Select-MenuShow</code></p>
 
 <h4>
-<a name="voice" class="anchor" href="#voice"><span class="octicon octicon-link"></span></a>Voice</h4>
+<a id="voice" class="anchor" href="#voice" aria-hidden="true"><span class="octicon octicon-link"></span></a>Voice</h4>
 
-<p><code>Out-ClangSetupTipsVoice</code> </p>
+<p><code>Out-ClangSetupTipsVoice</code>   </p>
 
-<p>Copyright © 2014 ForceStudio.All Rights Reserved.</p>
-      </section>
+<p>Copyright © 2014 ForceStudio. All Rights Reserved.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/forcezeus/ClangSetupvNext/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/forcezeus/ClangSetupvNext/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/forcezeus/ClangSetupvNext"></a> is maintained by <a href="https://github.com/forcezeus">forcezeus</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">ClangSetupvNext maintained by <a href="https://github.com/forcezeus">forcezeus</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
+  
   </body>
 </html>
